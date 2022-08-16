@@ -15,11 +15,11 @@
  * 
  */
 
-public class LessonOne {
-    public static void main(String[] args) {
-        var d = 123;
-        System.out.println(d);
-        System.out.println(getType(d));
+// public class LessonOne {
+//     public static void main(String[] args) {
+//         var d = 123;
+//         System.out.println(d);
+//         System.out.println(getType(d));
 
         // int a = 123;
         // a = a-- - -- a;
