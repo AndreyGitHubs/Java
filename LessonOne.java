@@ -1,3 +1,8 @@
+public class LessonOne {
+        public static void main(String[] args) {
+                System.out.print("Hello world");
+        }
+}
 // import java.util.Scanner;
 
 // LessonOne - коментарии
