@@ -3,7 +3,7 @@ public class HomeOne {
 
     }
 
-public void duplicateZeros(int[] arr) {
+public static void duplicateZeros(int[] arr) {
        
     int[] copy = arr.clone();
     int last = 0;
@@ -18,7 +18,7 @@ public void duplicateZeros(int[] arr) {
     }
 }
 
-public int removeElement(int[] nums, int val) {
+public static int removeElement(int[] nums, int val) {
     int i = 0;
     int n = nums.length;
     while (i < n) {
@@ -32,7 +32,7 @@ public int removeElement(int[] nums, int val) {
     return n;
 }
 
-public String reverseWords(String s) {
+public static String reverseWords(String s) {
     StringBuilder list = new StringBuilder();
     int end = s.length() - 1;
     while (end >= 0){
