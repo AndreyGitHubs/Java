@@ -42,26 +42,27 @@ public class HomeTwo {
         }
     }
 
-    public static List<List<Integer>> kombination(int n, int k) {
-        List<List<Integer>> result = new ArrayList<>();
-        if (n < k)
+    class Solution {
+        public List<List<Integer>> combine(int n, int k) {
+            List<List<Integer>> result = new ArrayList<>();
+            if (n < k)
+                return result;
+            int[] arr = new int[n];
+            for (int i = 1; i <= n; i++)
+                arr[i - 1] = i;
+            backback(k, 0, arr, new ArrayList<Integer>(), result);
             return result;
-        int[] arr = new int[n];
-        for (int i = 1; i <= n; i++)
-            arr[i - 1] = i;
-        backback(k, 0, arr, new ArrayList<Integer>(), result);
-        return result;
-    }
+        }
 
-    private static void backback(int k, int start, int[] arr, List<Integer> list,
-            List<List<Integer>> result) {
-        if (k == 0)
-            result.add(new ArrayList<Integer>(list));
-        else {
-            for (int i = start; i <= arr.length - k; i++) {
-                list.add(arr[i]);
-                backback(k - 1, i + 1, arr, list, result);
-                list.remove(list.size() - 1);
+        private static void backback(int k, int start, int[] arr, List<Integer> list, List<List<Integer>> result) {
+            if (k == 0)
+                result.add(new ArrayList<Integer>(list));
+            else {
+                for (int i = start; i <= arr.length - k; i++) {
+                    list.add(arr[i]);
+                    backback(k - 1, i + 1, arr, list, result);
+                    list.remove(list.size() - 1);
+                }
             }
         }
     }
