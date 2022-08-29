@@ -114,7 +114,6 @@ class QueenBoard {
         return board[x][y];
     }
 
-    @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
         result.append("------------------------------\n");
