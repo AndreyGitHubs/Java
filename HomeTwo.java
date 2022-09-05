@@ -64,6 +64,17 @@ public class HomeTwo {
                     list.remove(list.size() - 1);
                 }
             }
+
+            // if (k == 0) {
+            // result.add(new ArrayList<Integer>(list));
+            // return;
+            // }
+
+            // for (int i = start; i <= arr.length - k; i++) {
+            // list.add(arr[i]);
+            // backback(k - 1, i + 1, arr, list, result);
+            // list.remove(list.size() - 1);
+            // }
         }
     }
 }

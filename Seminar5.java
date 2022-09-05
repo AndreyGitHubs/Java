@@ -5,7 +5,7 @@ public class Seminar5 {
     public static void main(String[] args) {
 
         Map<String, Integer> map = new HashMap<>();
-        Map<String, Integer> defaultMap = Map.of("+", 5, "-", 5);
+        Map<String, Integer> map = map.of("+", 5, "-", 5);
         String text = "a b c d";
 
         for (String word : text.split(" ")) {
