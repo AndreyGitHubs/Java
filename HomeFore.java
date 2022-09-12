@@ -42,6 +42,36 @@
 //     }
 // }
 
+// еще один вариант решения только есть ошибка. надо разобрать!
+
+// public static String simplifyPath(String path) {
+//     Stack<String> stack = new Stack<>();
+//     StringBuilder ans = new String Builder();
+
+// String[] tokens = path.split("/");
+// for(String token : tokens){
+//     if ("..".equals(token)){
+//         if (!stack.isEmpty()){
+//             stack.pop();
+//         }                
+//     } else if (!".".equals(token) && !token.isBlanck()){
+//         stack.push(token);
+//     }
+// }
+
+// ans.append("/");
+
+// while (!stack.isEmpty()){
+//     ans.append(stack.pop())
+//     .append("/");
+// }
+
+// ans.deleteCharAt(ans.length() - 1);
+// return ans.toString();
+
+// }
+//
+
 import java.util.Stack;
 
 class Solution {
